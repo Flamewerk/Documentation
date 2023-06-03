@@ -2,7 +2,7 @@
   <BlockGhostSinglePost />
 </template>
 <script setup>
-setPageLayout('web')
+setPageLayout('client')
 </script>
 <style lang="scss">
 @import '@/flamewerk/Block/Ghost/css/blogstyling.scss'

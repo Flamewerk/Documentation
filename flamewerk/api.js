@@ -1,14 +1,14 @@
 
 export const useAPI = defineStore('api', {
-    state: () => ({
+  state: () => ({
 
-        //DEMO API FROM THE OFFICIAL GHOST TEAM
-        ghost:{ 
-          url: 'https://demo.ghost.io',
-          key: '22444f78447824223cefc48062',
-          version: "v5.0",
-          filter: false
-        }
+      //DEMO API FROM THE OFFICIAL GHOST TEAM
+      ghost:{ 
+        url: 'https://content.ghost.io',
+        key: '886ce8470124821e8ff335ff74',
+        version: "v5.0",
+        filter: "Flamewerk"
+      }
 
-    })
+  })
 })

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-colorBgLight dark:bg-colorBgDark px-4  pb-20 sm:px-6 lg:px-8 "
+    class="bg-colorBgLight dark:bg-colorBgDark px-4 mt-24 pb-20 sm:px-6 lg:px-8 "
   >
     <div
       class="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl"

@@ -6,7 +6,7 @@
     <slot id="#code" />
     <button
       ref="copy"
-      class="copy absolute text-white dark:text-black text-sm bottom-1.5 right-1.5 ring-1 dark:ring-black ring-white  
+      class="copy absolute text-white dark:text-black text-sm top-1.5 right-1.5 ring-1 dark:ring-black ring-white  
       
       bg-colorHeaderBgLight dark:bg-colorHeaderBgDark
       

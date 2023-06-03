@@ -1,4 +1,4 @@
-import {GlobeEuropeAfricaIcon, BuildingStorefrontIcon, CursorArrowRippleIcon, CommandLineIcon} from '@heroicons/vue/24/outline'
+import {GlobeEuropeAfricaIcon, BuildingStorefrontIcon,HeartIcon,FireIcon, CloudArrowUpIcon,CodeBracketSquareIcon, Square3Stack3DIcon, CursorArrowRippleIcon, CommandLineIcon, WrenchScrewdriverIcon} from '@heroicons/vue/24/outline'
 // IMPORT ALL HEROICONS HERE YOU WOULD LIKE TO USE IN YOUR MENU
 export const useSettings = defineStore("project", {
   state: () => ({
@@ -16,7 +16,7 @@ export const useSettings = defineStore("project", {
 
     layout: 'web',               // (default, web, app, client )      
 
-    shop: true,                  // still need to hook up
+    shop: false,                  // still need to hook up
     shopcurrency: 'eur',         // Default Currenty ( Should be an object)
     snipcartid: 'YjIxYzVkZTMtZTAwYi00ODAxLWFiZTgtN2RmNGM4Y2NkZDJlNjM3MjQ4MDgxODk2ODI3ODcy', // Snipcart API
 
@@ -28,10 +28,10 @@ export const useSettings = defineStore("project", {
     headerlogintext: 'Sign up!',
     headerclientprofile: false,
 
-    nostr:true,                   // Login Prompt Request Nip-07 on page load
-    nostrlogin: true,             // Add’s a menu icon to retrigger Nip-07 Login Prompt
-    nostrregister: true,          // Add’s a key menu icon to popup a Generating Keypairs 
-    nostrprofile: true,          // Still need to be implemented Reads out your profile Information.
+    nostr:false,                   // Login Prompt Request Nip-07 on page load
+    nostrlogin: false,             // Add’s a menu icon to retrigger Nip-07 Login Prompt
+    nostrregister: false,          // Add’s a key menu icon to popup a Generating Keypairs 
+    nostrprofile: false,          // Still need to be implemented Reads out your profile Information.
     nostrrelay: "wss://relay.damus.io",               // Set your relay to connect to wss://relay.example.io
 
     footertype: 'Ecommerce',      // Options: Tiny, Minimal, Maximum, Ecommerce
@@ -43,12 +43,12 @@ export const useSettings = defineStore("project", {
     socialnavigation : {          // Enter a Url/Key to your Social Account
       facebook: '',
       instagram: '',
-      twitter: '',
+      twitter: 'https://twitter.com/flamewerk',
       github:'',
-      discord: '',
+      discord: 'https://discord.gg/eKCS93H9eA',
       dribble: '',
       linkedin: '',
-      telegram: '',
+      telegram: 'https://t.me/+dCCYfqrQg5Q0ZTk0',
       nostr: '',
     },
 
@@ -56,9 +56,9 @@ export const useSettings = defineStore("project", {
     Headernavigation : { 
       basicmenu : [
         {
-          name: 'Website',
+          name: 'Introduction',
           description: 'Design and create Blogs, landingpages and traditional websites.',
-          href: '/site',
+          href: '/introduction',
           icon: '',
           heroicon: GlobeEuropeAfricaIcon,
           bgcolor:'bg-blue-500',
@@ -68,11 +68,11 @@ export const useSettings = defineStore("project", {
         },
 
         {
-          name: 'Application',
+          name: 'Local Setup',
           description: 'Start building the core app design with ready made auth designs.',
-          href: '/login',
+          href: '/local-setup',
           icon: '',
-          heroicon: CursorArrowRippleIcon,
+          heroicon: CodeBracketSquareIcon,
           bgcolor:'bg-blue-500',
           position: 1,
           mobile: true,
@@ -80,9 +80,9 @@ export const useSettings = defineStore("project", {
         },
 
         {
-          name: 'Ecommerce',
+          name: 'Project Config',
           description: 'Create a product list and start selling products and digital goods today.',
-          href: '/shop',
+          href: '/project-config',
           icon: '',
           heroicon: BuildingStorefrontIcon,
           bgcolor:'bg-blue-500',
@@ -92,16 +92,66 @@ export const useSettings = defineStore("project", {
         },
 
         {
-          name: 'Client',
+          name: 'Layouts',
           description: 'Provide documentation or just share notes to improve user guidance.',
-          href: '/client',
+          href: '/layouts',
           icon: '',
-          heroicon: CommandLineIcon,
+          heroicon: Square3Stack3DIcon,
           bgcolor:'bg-blue-500',
           position: 1,
           mobile: true,
           mobileposition: 1,
         },
+
+        {
+          name: 'Building Blocks',
+          description: 'Provide documentation or just share notes to improve user guidance.',
+          href: '/building-blocks',
+          icon: '',
+          heroicon: WrenchScrewdriverIcon,
+          bgcolor:'bg-blue-500',
+          position: 1,
+          mobile: true,
+          mobileposition: 1,
+        },
+
+        {
+          name: 'Deployment',
+          description: 'Provide documentation or just share notes to improve user guidance.',
+          href: '/deployment',
+          icon: '',
+          heroicon: CloudArrowUpIcon,
+          bgcolor:'bg-blue-500',
+          position: 1,
+          mobile: true,
+          mobileposition: 1,
+        },
+
+        {
+          name: 'Demos ',
+          description: 'Provide documentation or just share notes to improve user guidance.',
+          href: '/demos',
+          icon: '',
+          heroicon: FireIcon,
+          bgcolor:'bg-blue-500',
+          position: 1,
+          mobile: true,
+          mobileposition: 1,
+        },
+
+
+        {
+          name: 'Contributing',
+          description: 'Provide documentation or just share notes to improve user guidance.',
+          href: '/contribute',
+          icon: '',
+          heroicon: HeartIcon,
+          bgcolor:'bg-blue-500',
+          position: 1,
+          mobile: true,
+          mobileposition: 1,
+        },
+
 
       ],
 

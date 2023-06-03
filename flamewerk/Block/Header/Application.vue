@@ -82,7 +82,7 @@
           :to="localePath(item.href)"
           v-for="item in navigation.basicmenu"
           :key="item.name"
-          class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold w-full"
+          class="text-gray-900 dark:text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold w-full"
           >
           
           
@@ -167,7 +167,7 @@
           :to="localePath(item.href)"
           v-for="item in navigation.basicmenu"
           :key="item.name"
-          class="text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold w-full"
+          class="text-gray-900 dark:text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold w-full"
           >
                                   <component
                           :is="item.heroicon"
