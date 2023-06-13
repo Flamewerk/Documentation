@@ -120,7 +120,7 @@ export default defineNuxtConfig({
       // Additional sources
       flamewerk: {
         driver: "fs",
-        base: "./flamewerk/Content/", // Path for source directory
+        base: "./flamewerk/content/", // Path for source directory
       },
     },
     documentDriven: true,
