@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/i18n",
     "nuxt-chatgpt",
+    '@nuxthq/studio',
     [
       "@pinia/nuxt",
       {
